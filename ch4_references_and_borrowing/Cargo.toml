@@ -1,0 +1,6 @@
+[package]
+name = "ch4_references_and_borrowing"
+version = "0.1.0"
+authors = ["matty <mattypowell101@gmail.com>"]
+
+[dependencies]

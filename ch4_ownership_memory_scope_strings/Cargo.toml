@@ -1,0 +1,6 @@
+[package]
+name = "ch4_ownership_scope_memory"
+version = "0.1.0"
+authors = ["matty <mattypowell101@gmail.com>"]
+
+[dependencies]
