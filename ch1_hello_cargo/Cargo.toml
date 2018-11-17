@@ -1,5 +1,5 @@
 [package]
-name = "hello_cargo"
+name = "ch1_hello_cargo"
 version = "0.1.0"
 authors = ["matty"]
 
