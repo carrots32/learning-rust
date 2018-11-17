@@ -1,10 +1,9 @@
 const MAX_POINTS: u32 = 100_000; // Can add '_' to num literals for readability
 
-
 fn main() {
     println!("\n=== Using the Constant ===");
     println!("Max points = {}", MAX_POINTS);
-    
+
     println!("\n=== Mutability ===");
     mutability();
     
@@ -22,20 +21,20 @@ fn main() {
 
 fn mutability() {
     let mut x = 5; // mut needed to make it mutable
-    println!("The value of x is: {}", x);
-    x = 6;
-    println!("The value of x is now: {}", x);
+    println!("The value of x is: {}", x); // 5
+    x = 6; // original x value changed
+    println!("The value of x is now: {}", x); // 6
 }
 
 
 fn shadowing() {
-    let x = 5;
+    let x = 5; // x = 5
 
-    let x = x + 1;
+    let x = x + 1; // a new x shadows old x so now x = 5 + 1 = 6
 
-    let x = x * 2;
+    let x = x * 2; // a new x shadows old x so now x = 6 * 2 = 12
 
-    println!("The value of x is: {}", x);
+    println!("The value of x is: {}", x); // 12
 }
 
 fn mutate_type() {
@@ -46,7 +45,7 @@ fn mutate_type() {
             (shadowed - can't actually change type of mutated variable)",
              spaces);
 
-    // This is fine because we are just shadowing the first with the second
+    // The above is fine because we are just shadowing the first with the second
     // However the following is illegal:
     /*
      let mut spaces = "  ";
