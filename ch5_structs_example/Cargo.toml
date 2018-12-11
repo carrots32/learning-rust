@@ -1,0 +1,6 @@
+[package]
+name = "ch5_structs_example"
+version = "0.1.0"
+authors = ["matty <mattypowell101@gmail.com>"]
+
+[dependencies]
